@@ -1,5 +1,4 @@
 import React from "react";
-import "../style/gallery.scss";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "../style/cards.scss";
