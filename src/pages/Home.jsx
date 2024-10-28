@@ -1,22 +1,21 @@
+import React from "react";
 import Banner from "../components/Banner";
-import "../style/home.scss";
 import Card from "../components/Card";
-import fichier from "../logements.json";
-import lienImage from "../images/banner1.jpg";
+import data from "../data/appartements.json";
+
+
 const Home = () => {
+
   return (
-    <>
-      <div>
-        <main>
-          <section>
-            <Banner img={lienImage} title={"Chez vous, partout et ailleurs"} />
-          </section>
-          <section>
-            <Card fichierjson={fichier} />
-          </section>
-        </main>
+
+      <>
+      <Banner title={"Chez vous, partout et ailleurs"} className="home-banner"/>
+
+      <div className="container-cards">
+        {data.map(card => (<Card key={card.id} id={card.id} title={card.title} cover={card.cover} />))}
       </div>
-    </>
+      </>
   );
 };
+
 export default Home;

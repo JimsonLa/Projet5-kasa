@@ -1,21 +1,13 @@
-import React from "react";
-import logo from "../images/logo.png";
-import "../style/footer.scss";
+import React from 'react';
+import logo2 from "../assets/white-logo.svg";
 
 const Footer = () => {
-  return (
-    <div>
-      <footer id="footer">
-        <div id="footer-content">
-          <img src={logo} alt="logo Kasa" />
-          <p>
-            <span>©</span>
-            {new Date().getUTCFullYear()} Kasa .All Rights Reserved
-          </p>
+    return (
+        <div className='footer'>
+            <img src={logo2} alt="Logo Kasa noir et blanc" className='logo2' />
+            <p>© 2020 Kasa. All rights reserved</p>
         </div>
-      </footer>
-    </div>
-  );
+    );
 };
 
 export default Footer;

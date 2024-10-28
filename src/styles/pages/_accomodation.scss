@@ -1,0 +1,126 @@
+.galery {
+  img {
+    border-radius: 10px;
+    max-height: 400px;
+    width: 100%;
+    margin: 30px 0;
+  }
+}
+
+.accomodation-container {
+  .accomodation-container-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    .accomodation-left {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .accomodation-names {
+        h2 {
+          color: $color-1;
+          font-weight: 500;
+          font-size: 32px;
+
+          @media screen and (max-width: 767px) {
+            font-size: 25px;
+          }
+        }
+
+        h3 {
+          font-size: 14px;
+          font-weight: 500;
+          margin: 8px 0;
+        }
+      }
+
+      .tags {
+        ul {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          li {
+            color: $color-3;
+            background: $color-1;
+            padding: 5px 25px;
+            border-radius: 8px;
+            font-size: 10px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .accomodation-right {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    .host {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 25px;
+
+      h4 {
+        color: $color-1;
+        font-weight: 500;
+        max-width: 100px;
+        text-align: right;
+
+        @media screen and (max-width: 767px) {
+          font-size: 13px;
+        }
+      }
+
+      img {
+        border-radius: 100px;
+        width: 35%;
+      }
+    }
+    .rating {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+
+      @media screen and (max-width: 767px) {
+        gap: 5px;
+      }
+
+      img {
+        width: 20px;
+      }
+    }
+  }
+}
+
+.accomodation-collapse {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin: 20px 0;
+
+  @media screen and (max-width: 767px) {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin: 5px 0;
+  }
+}

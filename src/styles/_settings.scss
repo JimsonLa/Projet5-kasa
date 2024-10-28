@@ -1,0 +1,38 @@
+$color-1: #ff6060;
+$color-2: #ffffff 0%, #0a0a0a 0%, #040404 20.5%, #000000 50%;
+$color-3: #f6f6f6;
+$color-4: #000000;
+
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: $color-4;
+  border: none;
+}
+
+body {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  margin: 0 70px;
+
+  @media screen and (max-width: 767px) {
+    margin: 0 20px;
+  }
+}
+
+li {
+  list-style-type: none;
+}
