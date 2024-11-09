@@ -10,18 +10,19 @@ import Home from "./pages/Home";
 const App = () => {
   return (
     <BrowserRouter>
-    <div className="container">
-    <Header /> <div className="content">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<Error />} />
-        <Route path="/logement/:id" element={<Accomodation />} />        
-
-      </Routes></div>
-      <Footer /></div>
+      <div className="container">
+        <Header />{" "}
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<Error />} />
+            <Route path="/logement/:id" element={<Accomodation />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
     </BrowserRouter>
-    
   );
 };
 
