@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../components/Banner";
 import Card from "../components/Card";
 import data from "../data/appartements.json";
+import imgBannerAbout from "../assets/rock.png";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Banner
         title={"Chez vous, partout et ailleurs"}
         className="home-banner"
+        img={imgBannerAbout}
       />
 
       <div className="container-cards">

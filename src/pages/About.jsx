@@ -3,6 +3,8 @@ import React from "react";
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 
+import imgBannerAbout from "../assets/rock.png";
+
 const About = () => {
   const details1 = (
     <p>
@@ -40,7 +42,7 @@ const About = () => {
 
   return (
     <>
-      <Banner className="about-banner" />
+      <Banner className="about-banner" img={imgBannerAbout} />
 
       <div className="about-collapse-container">
         <div className="about-collapse">
